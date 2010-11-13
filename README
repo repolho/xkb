@@ -1,13 +1,13 @@
 Colegrammer - Colemak for the (shell) programmer
-<http://repura.livejournal.com/tag/colegrammer>
+http://repura.livejournal.com/tag/colegrammer
 
 This layout inherits the great letter key arrangement from Colemak
-<http://colemak.com> (by Shai Coleman) while trying to fix the mess which is the
+(http://colemak.com) (by Shai Coleman) while trying to fix the mess which is the
 symbol key arrangement from Qwerty. Furthermore, it also tries to prevent the
 user from ever having to move his hands to reach for a key.
 
 The idea that a programmer will type numbers less often than symbols was
-imported from Programmer Dvorak <http://www.kaufmann.no/roland/dvorak/> (by
+imported from Programmer Dvorak (http://www.kaufmann.no/roland/dvorak/) (by
 Roland Kaufman), but Colegrammer tries to accomplish this in quite a different
 manner. Instead of level 2 (shifted) positions, the numbers were arranged in
 group 2 (mod3ed) positions, on the right hand alone, to prevent the constant
