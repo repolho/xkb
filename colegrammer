@@ -1,0 +1,286 @@
+// Colegrammer - Colemak for the (shell) programmer
+// <http://repura.livejournal.com/tag/colegrammer>
+
+// For future reference:
+//  66 == <CAPS> -> backspace
+//  21 == <AE12> -> right alt
+//  49 == <TLDE> -> left alt
+// 135 == <MENU> -> right control
+
+default partial alphanumeric_keys
+xkb_symbols "colegrammer" {
+    include "us(basic)"
+    include "colegrammer(modifiers)"
+
+    name[Group1]= "Letters, symbols, i18n";
+    name[Group2]= "Numbers and crap";
+
+    // symbol row, left side
+    // TLDE = alt, see modifiers
+    key <AE01> {
+        [ braceleft, percent ],
+	[ VoidSymbol ]
+    };
+    key <AE02> {
+        [ bracketleft, less ],
+	[ VoidSymbol ]
+    };
+    key <AE03> {
+        [ backslash, exclam ],
+        [ Home ]
+    };
+    key <AE04> {
+        [ parenleft, asciicircum ],
+        [ End ]
+    };
+    key <AE05> {
+        [ bar, ampersand ],
+	[ VoidSymbol ]
+    };
+
+    // unused
+    key <AE06> {
+        [ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol ]
+    };
+
+    // symbol row, right side
+    key <AE07> {
+        [ asterisk, at ],
+	[ asterisk ]
+    };
+    key <AE08> {
+        [ parenright, asciitilde ],
+	[ VoidSymbol ]
+    };
+    key <AE09> {
+        [ slash, question ],
+	[ VoidSymbol ]
+    };
+    key <AE10> {
+        [ bracketright, greater ],
+	[ VoidSymbol ]
+    };
+    key <AE11> {
+        [ braceright, grave ],
+	[ VoidSymbol ]
+    };
+    // AE12 = alt, see modifiers
+
+    // top row, left side
+    key <AD01> {
+        [ q, Q ],
+	[ Tab, ISO_Left_Tab ]
+    };
+    key <AD02> {
+        [ w, W, aring, Aring ],
+        [ Escape ]
+    };
+    key <AD03> {
+        [ f, F, atilde, Atilde ],
+        [ Up ]
+    };
+    key <AD04> {
+        [ p, P ],
+        [ Return ]
+    };
+    key <AD05> {
+        [ g, G ],
+	[ VoidSymbol ]
+    };
+
+    // top row, right side
+    key <AD06> {
+        [ j, J ],
+	[ comma ]
+    };
+    key <AD07> {
+        [ l, L ],
+	[ period ]
+    };
+    key <AD08> {
+        [ u, U, uacute, Uacute ],
+        [ asterisk ]
+    };
+    key <AD09> {
+        [ y, Y ],
+        [ slash ]
+    };
+    key <AD10> {
+        [ quotedbl, apostrophe, otilde, Otilde ],
+        [ plus ]
+    };
+    key <AD11> {
+        [ dollar, numbersign ],
+        [ equal ]
+    };
+    key <AD12> {
+        [ grave, VoidSymbol ],
+	[ grave ]
+    };
+    // unused
+    key <BKSL> {
+        [ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol ]
+    };
+
+    // home row, left side
+    key <AC01> {
+        [ a, A, aacute, Aacute ],
+        [ BackSpace ]
+    };
+    key <AC02> {
+        [ r, R, agrave, Agrave ],
+        [ Left ]
+    };
+    key <AC03> {
+        [ s, S ],
+        [ Down ]
+    };
+    key <AC04> {
+        [ t, T ],
+        [ Right ]
+    };
+    key <AC05> {
+        [ d, D, degree, VoidSymbol ],
+	[ Delete ]
+    };
+
+    // home row, right side
+    key <AC06> {
+        [ h, H ],
+        [ 0 ]
+    };
+    key <AC07> {
+        [ n, N ],
+        [ 1 ]
+    };
+    key <AC08> {
+        [ e, E, eacute, Eacute ],
+        [ 2 ]
+    };
+    key <AC09> {
+        [ i, I, iacute, Iacute ],
+        [ 3 ]
+    };
+    key <AC10> {
+        [ o, O, oacute, Oacute ],
+        [ 4 ]
+    };
+    key <AC11> {
+        [ minus, underscore ],
+        [ minus ]
+    };
+
+    // bottom row, left side
+    // unused (absent in 101-key keyboards)
+    key <LSGT> {
+        [ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol ]
+    };
+    key <AB01> {
+        [ z, Z, ae, AE ],
+	[ VoidSymbol ]
+    };
+    key <AB02> {
+        [ x, X, acircumflex, Acircumflex ],
+	// PgUp
+	[ Prior ]
+    };
+    key <AB03> {
+        [ c, C, ccedilla, Ccedilla ],
+	// PgDown
+        [ Next ]
+    };
+    key <AB04> {
+        [ v, V ],
+        [ Insert ]
+    };
+    key <AB05> {
+        [ b, B ],
+	[ VoidSymbol ]
+    };
+
+    // bottom row, right side
+    key <AB06> {
+        [ k, K ],
+        [ 5 ]
+    };
+    key <AB07> {
+        [ m, M, emdash, endash ],
+        [ 6 ]
+    };
+    key <AB08> {
+        [ comma, semicolon, ecircumflex, Ecircumflex ],
+        [ 7 ]
+    };
+    key <AB09> {
+        [ period, colon, oslash, Ooblique ],
+        [ 8 ]
+    };
+    key <AB10> {
+        [ equal, plus, ocircumflex, Ocircumflex ],
+        [ 9 ]
+    };
+    // unused (absent in 101-key keyboards)
+    key <AB11> {
+        [ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol ]
+    };
+
+    // using caps as backspace, backspace as caps
+    key <CAPS> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ BackSpace ],
+        symbols[Group2] = [ BackSpace ]
+    };
+    key <BKSP> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Caps_Lock ],
+        symbols[Group2] = [ Caps_Lock ]
+    };
+};
+
+partial modifier_keys
+xkb_symbols "modifiers" {
+
+    // using altgr as ISO_Level3_Shift (Mod5)
+    include "level3(ralt_switch)"
+
+    // using menu as control
+    key <MENU> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Control_R ],
+        symbols[Group2] = [ Control_R ]
+    //    symbols[Group1] = [ Super_R ],
+    //    symbols[Group2] = [ Super_R ]
+    };
+    modifier_map Control { <MENU> };
+
+    // using tlde and ae12 as alt
+    key <TLDE> {
+        type[Group1]="TWO_LEVEL",
+        type[Group2]="TWO_LEVEL",
+        symbols[Group1] = [ Alt_L, Meta_L ], 
+        symbols[Group2] = [ Alt_L, Meta_L ]
+    };
+    key <AE12> {
+        type[Group1]="TWO_LEVEL",
+        type[Group2]="TWO_LEVEL",
+        symbols[Group1] = [ Alt_R, Meta_R ], 
+        symbols[Group2] = [ Alt_R, Meta_R ]
+    };
+    modifier_map Mod1 { <TLDE>, <AE12> };
+
+    // using left alt as Mode_switch
+    key <LALT> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Mode_switch ],
+        symbols[Group2] = [ Mode_switch ]
+    };
+    modifier_map Mod3 { <LALT> };
+};

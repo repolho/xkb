@@ -1,0 +1,134 @@
+// Progemak - Programmer Colemak, by Repolho 
+// <http://repura.livejournal.com/tag/progemak>
+
+// A merge between the letter arrangement and multilingualization from Colemak
+// <http://colemak.com/>, by Shai Coleman, and programming symbols and number
+// arrangement (numpad included) from Programmer Dvorak
+// <http://www.kaufmann.no/roland/dvorak/>, by Roland Kaufmann.
+
+// This work belongs to the public domain.
+
+partial default alphanumeric_keys keypad_keys
+xkb_symbols "progemak" {
+    include "us(basic)"
+    name[Group1]= "Programmer Colemak";
+
+    //             Unmodified    Shift        AltGr                 Shift+AltGr
+
+    // Symbols row
+
+    // there're better tilde and dead_tilde at AD10 below
+    key <TLDE> { [ dollar,       asciitilde,  dead_tilde,           approxeq             ] };
+    key <AE01> { [ ampersand,    percent,     eth,                  ETH                  ] };
+    key <AE02> { [ bracketleft,  7,           guillemotleft,        0x1002039            ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE03> { [ braceleft,    5,           EuroSign,             yen                  ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE04> { [ braceright,   3,           ordfeminine,          threesuperior        ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE05> { [ parenleft,    1,           onehalf,              onesuperior          ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    // this key is the equal sign in pro-dvo, but since it got moved to a much
+    // better spot (AD10 below), it was replaced here with an unshifted quotemark
+    key <AE06> { [ quotedbl,     9,           leftsinglequotemark,  leftdoublequotemark  ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE07> { [ asterisk,     0,           rightsinglequotemark, rightdoublequotemark ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE08> { [ parenright,   2,           masculine,            twosuperior          ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE09> { [ plus,         4,           cent,                 sterling             ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE10> { [ bracketright, 6,           guillemotright,       0x100203a            ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE11> { [ exclam,       8,           exclamdown,           0x1002030            ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE12> { [ numbersign,   grave,       dead_grave,           currency             ] };
+
+    // Upper row
+
+    key <AD01> { [ q,            Q,           adiaeresis,           Adiaeresis           ] };
+    key <AD02> { [ w,            W,           aring,                Aring                ] };
+    key <AD03> { [ f,            F,           atilde,               Atilde               ] };
+    key <AD04> { [ p,            P,           oslash,               Ooblique             ] };
+    key <AD05> { [ g,            G,           dead_ogonek,          paragraph            ] };
+    key <AD06> { [ j,            J,           dstroke,              Dstroke              ] };
+    key <AD07> { [ l,            L,           lstroke,              Lstroke              ] };
+    key <AD08> { [ u,            U,           uacute,               Uacute               ] };
+    key <AD09> { [ y,            Y,           udiaeresis,           Udiaeresis           ] };
+    key <AD10> { [ equal,        asciitilde,  dead_tilde,           notequal             ] };
+    key <AD11> { [ slash,        question,    questiondown,         division             ] };
+    key <AD12> { [ at,           asciicircum, hstroke,              Hstroke              ] };
+
+    // Home row
+
+    key <AC01> { [ a,            A,           aacute,               Aacute               ] };
+    key <AC02> { [ r,            R,           dead_grave,           ellipsis             ] }; 
+    key <AC03> { [ s,            S,           ssharp,               section              ] }; 
+    key <AC04> { [ t,            T,           dead_acute,           dead_doubleacute     ] };
+    key <AC05> { [ d,            D,           dead_diaeresis,       degree               ] };
+    key <AC06> { [ h,            H,           dead_caron,           numerosign           ] };
+    key <AC07> { [ n,            N,           ntilde,               Ntilde               ] };
+    key <AC08> { [ e,            E,           eacute,               Eacute               ] };
+    key <AC09> { [ i,            I,           iacute,               Iacute               ] };
+    key <AC10> { [ o,            O,           oacute,               Oacute               ] };
+    key <AC11> { [ minus,        underscore,  endash,               emdash               ] };
+    key <BKSL> { [ backslash,    bar,         thorn,                THORN                ] };
+
+    // Lower row
+
+    // 101-key keyboards lack this key
+    key <LSGT> { [ apostrophe,   quotedbl,    otilde,               Otilde               ] };
+    key <AB01> { [ z,            Z,           ae,                   AE                   ] };
+    key <AB02> { [ x,            X,           dead_circumflex,      multiply             ] };
+    key <AB03> { [ c,            C,           ccedilla,             Ccedilla             ] };
+    key <AB04> { [ v,            V,           oe,                   OE                   ] };
+    key <AB05> { [ b,            B,           dead_breve,           brokenbar            ] };
+    key <AB06> { [ k,            K,           dead_abovering,       mu                   ] };
+    key <AB07> { [ m,            M,           dead_macron,          plusminus            ] };
+    key <AB08> { [ comma,        less,        dead_cedilla,         lessthanequal        ] };
+    key <AB09> { [ period,       greater,     dead_abovedot,        greaterthanequal     ] };
+    key <AB10> { [ semicolon,    colon,       odiaeresis,           Odiaeresis           ] };
+    // ABNT-2 keyboards have this key
+    key <AB11> { [ quotedbl,     agrave,      ecircumflex,          acircumflex          ] };
+
+    key <CAPS> { [ BackSpace,    BackSpace,   BackSpace,            BackSpace            ] };
+    key <BKSP> { [ Caps_Lock                                                             ] };
+    key <SPCE> { [ space,        space,       space,                nobreakspace         ] };
+
+    // Numpad
+
+    //             None       NumLock      AltGr
+
+    // Symbol row
+    key <KPDV> { [ NoSymbol,  slash,       parenleft  ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KPMU> { [ NoSymbol,  asterisk,    parenright ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KPSU> { [ NoSymbol,  minus,       dollar     ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+
+    // Upper row
+    key <KP7>  { [ NoSymbol,  KP_1,        a          ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KP8>  { [ NoSymbol,  KP_2,        b          ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KP9>  { [ NoSymbol,  KP_3,        c          ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+
+    // Home row
+    key <KP4>  { [ NoSymbol,  NoSymbol,    d          ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KP5>  { [ NoSymbol,  NoSymbol,    e          ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KP6>  { [ NoSymbol,  NoSymbol,    f          ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KPAD> { [ NoSymbol,  plus,        comma      ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+
+    // Lower row
+    key <KP1>  { [ NoSymbol,  KP_7,        equal      ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KP2>  { [ NoSymbol,  KP_8,        x          ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    key <KP3>  { [ NoSymbol,  KP_9,        colon      ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+
+    // Decimal row
+    key <KP0>  { [ NoSymbol,  NoSymbol,    backslash  ], type[Group1] = "FOUR_LEVEL_MIXED_KEYPAD" };
+    // ABNT-2 keyboards have this key
+    key <KPPT> { [ KP_Decimal ] };
+
+    include "kpdl(comma)"
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "101" {
+
+    // Replaces the equal/tilde key (P on a qwerty keyboard) with
+    // apostrophe/quotemark, which would not be available on the leftmost
+    // bottom row key. Moves the equal sign back to the quotemark/9 key (6 on a
+    // qwerty keyboard), as in pro-dvo.
+
+    include "progemak(progemak)"
+    
+    key <AD10> { [ apostrophe, quotedbl, otilde, Otilde ] };
+    key <AE06> { [ equal, 9, leftsinglequotemark, leftdoublequotemark ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+};

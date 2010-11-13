@@ -1,0 +1,127 @@
+# colegrammer.map
+# <http://repura.livejournal.com/tag/colegrammer>
+
+# This is a linux console counterpart to colegrammer. Here, the (left) alt key
+# will serve the same purpose as Mod3 in the xkb version, but it remains alt for
+# all other keys (also, it won't be possible to use alt+key with the keys that
+# do have group 2 symbols).
+
+alt_is_meta
+keymaps 0-12
+include "qwerty-layout"
+charset "iso-8859-15"
+
+#              unmodified    shift        altgr        shift+altgr  control
+
+keycode   2 =  braceleft     percent
+keycode   3 =  bracketleft   less         VoidSymbol   VoidSymbol    Escape
+keycode   4 =  backslash     exclam       VoidSymbol   VoidSymbol    Control_backslash
+keycode   5 =  parenleft     asciicircum  VoidSymbol   VoidSymbol    Control_asciicircum
+keycode   6 =  bar           ampersand
+keycode   7 =  VoidSymbol
+keycode   8 =  asterisk      at
+keycode   9 =  parenright    asciitilde
+keycode  10 =  slash         question
+keycode  11 =  bracketright  greater
+keycode  12 =  braceright    grave
+
+keycode  16 =  q
+keycode  17 =  w             W            aring        Aring         Control_w
+keycode  18 =  f             F            atilde       Atilde        Control_f
+keycode  19 =  p             P            oslash       Ooblique      Control_p
+keycode  20 =  g
+keycode  21 =  j
+keycode  22 =  l
+keycode  23 =  u             U            uacute       Uacute        Control_u
+keycode  24 =  y
+keycode  25 =  quotedbl      apostrophe   otilde       Otilde
+keycode  26 =  dollar        numbersign
+keycode  27 =  grave         grave        VoidSymbol   VoidSymbol
+
+keycode  30 =  a             A            aacute       Aacute        Control_a
+keycode  31 =  r             R            agrave       Agrave        Control_r
+keycode  32 =  s
+keycode  33 =  t
+keycode  34 =  d
+keycode  35 =  h
+keycode  36 =  n
+keycode  37 =  e             E            eacute       Eacute        Control_e
+keycode  38 =  i             I            iacute       Iacute        Control_i
+keycode  39 =  +o            O            oacute       Oacute        Control_o
+keycode  40 =  minus         underscore   VoidSymbol   VoidSymbol    Control_underscore
+
+keycode  44 =  z             Z            ae           AE            Control_z
+keycode  45 =  x             X            acircumflex  Acircumflex   Control_x
+keycode  46 =  c             C            ccedilla     Ccedilla      Control_c
+keycode  47 =  v
+keycode  48 =  b
+keycode  49 =  k
+keycode  50 =  m
+keycode  51 =  comma         semicolon    ecircumflex  Ecircumflex
+keycode  52 =  period        colon        VoidSymbol   VoidSymbol
+keycode  53 =  equal         plus         ocircumflex  Ocircumflex
+
+# capslock-backspace switch
+keycode  58 =  BackSpace
+keycode  14 =  Caps_Lock
+
+# new modifiers
+keycode  41 =  Alt
+keycode  13 =  Alt
+
+# regular modifiers and etc
+keycode  57 =  space         space        space        nobreakspace  nul
+keycode   1 =  Escape
+keycode  15 =  Tab
+keycode  28 =  Return
+alt      keycode  28 =  Meta_Control_m
+keycode  29 =  Control
+keycode  42 =  Shift
+keycode  54 =  Shift
+keycode  56 =  Alt
+keycode  97 =  Control
+
+# Menu and windows keys
+keycode 125 =  Scroll_Backward
+keycode 126 =  Scroll_Forward
+keycode 127 =  Control
+
+# unused
+keycode  86 =  VoidSymbol
+keycode  89 =  VoidSymbol
+keycode  43 =  VoidSymbol
+
+# Group 2
+alt      keycode   4 =  Home
+alt      keycode   5 =  End
+alt      keycode  10 =  slash
+alt      keycode  11 =  asterisk
+
+alt      keycode  16 =  Tab
+alt      keycode  17 =  Escape
+alt      keycode  18 =  Up
+alt      keycode  19 =  Return
+alt      keycode  22 =  period
+alt      keycode  23 =  minus
+alt      keycode  24 =  plus
+alt      keycode  25 =  equal
+
+alt      keycode  30 =  BackSpace
+alt      keycode  31 =  Left
+alt      keycode  32 =  Down
+alt      keycode  33 =  Right
+alt      keycode  34 =  Delete
+alt      keycode  35 =  zero
+alt      keycode  36 =  one
+alt      keycode  37 =  two
+alt      keycode  38 =  three
+alt      keycode  39 =  four
+
+alt      keycode  45 =  PageUp
+alt      keycode  46 =  PageDown
+alt      keycode  47 =  Insert
+alt      keycode  49 =  five
+alt      keycode  50 =  six
+alt      keycode  51 =  seven
+alt      keycode  52 =  eight
+alt      keycode  53 =  nine

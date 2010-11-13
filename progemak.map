@@ -1,0 +1,148 @@
+# progemak.map
+# Progemak - Programmer Colemak for the Linux console, by Repolho
+# <http://repura.livejournal.com/tag/progemak>
+# A merge between the letter arrangement and multilingualization from Colemak
+# <http://colemak.com/>, by Shai Coleman, and programming symbols and number
+# arrangement (numpad included) from Programmer Dvorak
+# <http://www.kaufmann.no/roland/dvorak/>, by Roland Kaufmann.
+
+# Based on Colemak's linux console keymap file.
+
+# This work belongs to the public domain.
+
+# Notes:
+#
+# The only difference between this keymap and the xkb version is the numpad
+# behavior (see below).
+#
+# You should use an iso-8859-15 font, like lat9w-16 or ter-v16b (from
+# terminus-font <http://www.is-vn.bg/hamster/>)
+
+# Installation:
+#
+# Copy this file to your system's console keymaps folder (mine is
+# /usr/share/keymaps/i386), and set it to be your keymap as root. Check your
+# distro's documentation for help.
+
+alt_is_meta
+keymaps 0-12
+include "qwerty-layout"
+charset "iso-8859-15"
+
+#                unmodified       shift           altgr      shift+altgr              control
+keycode  41 =        dollar  asciitilde      dead_tilde       asciitilde
+keycode   2 =     ampersand     percent             eth              ETH
+keycode   3 =  +bracketleft       seven   guillemotleft       asciitilde               Escape
+keycode   4 =    +braceleft        five            euro              yen
+keycode   5 =   +braceright       three     ordfeminine    threesuperior
+keycode   6 =    +parenleft         one      asciitilde      onesuperior
+keycode   7 =     +quotedbl        nine      asciitilde       asciitilde
+keycode   8 =     +asterisk        zero      asciitilde       asciitilde
+keycode   9 =   +parenright         two       masculine      twosuperior
+keycode  10 =         +plus        four            cent         sterling
+keycode  11 = +bracketright         six  guillemotright       asciitilde Control_bracketright
+keycode  12 =       +exclam       eight      exclamdown       asciitilde
+keycode  13 =    numbersign       grave      dead_grave       asciitilde
+
+keycode  16 =             q           Q      adiaeresis       Adiaeresis            Control_q
+keycode  17 =             w           W           aring            Aring            Control_w
+keycode  18 =             f           F          atilde           Atilde            Control_f
+keycode  19 =             p           P          oslash         Ooblique            Control_p
+keycode  20 =             g           G      asciitilde       asciitilde            Control_g
+keycode  21 =             j           J      asciitilde       asciitilde            Control_j
+keycode  22 =             l           L      asciitilde       asciitilde            Control_l
+keycode  23 =             u           U          uacute           Uacute            Control_u
+keycode  24 =             y           Y      udiaeresis       Udiaeresis            Control_y
+keycode  25 =         equal  asciitilde      dead_tilde       asciitilde
+keycode  26 =         slash    question    questiondown         division               Delete
+keycode  27 =            at asciicircum      asciitilde       asciitilde  Control_asciicircum
+
+keycode  30 =             a           A          aacute           Aacute            Control_a
+keycode  31 =             r           R      dead_grave       asciitilde            Control_r
+keycode  32 =             s           S          ssharp       asciitilde            Control_s
+keycode  33 =             t           T      dead_acute dead_doubleacute            Control_t
+keycode  34 =             d           D  dead_diaeresis       asciitilde            Control_d
+keycode  35 =             h           H      dead_caron       asciitilde            Control_h
+keycode  36 =             n           N          ntilde           Ntilde            Control_n
+keycode  37 =             e           E          eacute           Eacute            Control_e
+keycode  38 =             i           I          iacute           Iacute            Control_i
+keycode  39 =            +o           O          oacute           Oacute            Control_o
+keycode  40 =         minus  underscore      asciitilde       asciitilde   Control_underscore
+keycode  43 =     backslash         bar           thorn            THORN    Control_backslash
+keycode  44 =             z           Z              ae               AE            Control_z
+keycode  45 =             x           X dead_circumflex         multiply            Control_x
+keycode  46 =             c           C        ccedilla         Ccedilla            Control_c
+keycode  47 =             v           V              oe               OE            Control_v
+keycode  48 =             b           B      asciitilde       asciitilde            Control_b
+keycode  49 =             k           K      asciitilde       asciitilde            Control_k
+keycode  50 =             m           M      asciitilde       asciitilde            Control_m
+keycode  51 =         comma        less    dead_cedilla       asciitilde
+keycode  52 =        period     greater      asciitilde       asciitilde
+keycode  53 =     semicolon       colon      odiaeresis       Odiaeresis
+
+keycode  57 =         space       space           space     nobreakspace                  nul
+keycode  58 =     BackSpace   BackSpace       BackSpace        BackSpace
+keycode  86 =    apostrophe    quotedbl          otilde           Otilde
+keycode  89 =      quotedbl      agrave     ecircumflex      acircumflex
+
+# Numpad
+# This is slightly different from pro-dvo's: there you can't shift (because it
+# un-numlocks), so you have to use capslock to get the uppercase hex letters;
+# here you can't caps, and shift will give you the hex chars and altgr (or
+# shift+altgr) will give them in uppercase.
+# (IMHO this is actually a much better way to do it)
+
+# Numlock
+keycode  69 = Num_Lock VoidSymbol VoidSymbol VoidSymbol
+# / ( (
+keycode  98 = KP_Divide parenleft parenleft parenleft
+# * ) )
+keycode  55 = KP_Multiply parenright parenright parenright
+# 1 a A
+keycode  71 = KP_1 a A A
+# 2 b B
+keycode  72 = KP_2 b B B
+# 3 c C
+keycode  73 = KP_3 c C C
+# - $ $
+keycode  74 = KP_Subtract dollar dollar dollar
+# 4 d D
+keycode  75 = KP_4 d D D
+# 5 e E
+keycode  76 = KP_5 e E E
+# 6 f F
+keycode  77 = KP_6 f F F
+# + , ,
+keycode  78 = KP_Add comma comma comma
+# 7 = =
+keycode  79 = KP_7 equal equal equal
+# 8 x X
+keycode  80 = KP_8 x X X
+# 9 : :
+keycode  81 = KP_9 colon colon colon
+# 0 \ \
+keycode  82 = KP_0 backslash backslash backslash
+# . . .
+shift keycode 83 = period
+altgr keycode 83 = period
+shift altgr keycode 83 = period
+
+# for abnt2
+keycode 121 = period comma comma comma
+
+keycode   1 = Escape
+keycode  14 = Caps_Lock
+keycode  15 = Tab
+keycode  28 = Return
+alt      keycode  28 = Meta_Control_m
+keycode  29 = Control
+keycode  42 = Shift
+keycode  54 = Shift
+keycode  56 = Alt
+keycode  97 = Control
+
+# Menu and windows keys
+keycode 125 = Scroll_Backward
+keycode 126 = Scroll_Forward
+#keycode 127 = Compose
+keycode 127 = Control

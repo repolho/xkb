@@ -1,0 +1,31 @@
+Colegrammer - Colemak for the (shell) programmer
+<http://repura.livejournal.com/tag/colegrammer>
+
+XKB
+---
+
+To install locally (no root privileges):
+
+Copy the xkb file to a handy location (notice you need to place it inside a
+directory called symbols)
+
+$ mkdir -p "$HOME/.xkb/symbols"
+$ mv colegrammer "$HOME/.xkb/symbols"
+
+Now load it with
+
+$ setxkbmap -I"$HOME/.xkb" colegrammer -print | xkbcomp -w 0 -I"$HOME/.xkb" - "$DISPLAY" && xset r 66 -r 21 -r 49 -r 135
+
+System wide installation:
+
+Copy this file to your X11/xkb/symbols/ dir (mine is
+/usr/share/X11/xkb/symbols/), and run
+
+$ setxkbmap colegrammer && xset r 66 -r 21 -r 49 -r 135
+
+LINUX CONSOLE
+-------------
+
+Copy the map file to your system's console keymaps folder (mine is
+/usr/share/keymaps/i386), and set it to be your keymap as root. Check your
+distro's documentation for help.

@@ -1,0 +1,343 @@
+// Ergonomak - Ergonomic and symmetric layout concept, by Repolho
+//
+// This layout is not meant for everyday use, but rather as an experiment in
+// symbol and modifier key placement, to hopefully come up with useful ideas
+// that can be incorporated into a real layout.
+//
+// Objectives:
+// 1. Have all fingers taking care of no more than two key columns.
+// 2. Prevent any wrist movements; all keys must be acessible by finger movement
+//    alone (except for useless keys like F1-F12, PrintScreen, etc).
+// 3. Have a symbol placement that makes sense, paying close attention to
+//    symmetry and to frequency of use (in English, bash, C).
+// 4. Have two keys for each modifier.
+// 5. Fit into an 101-key keyboard.
+// 6. Accommodate internationalization (through AltGr).
+//
+// The emphasys here is clearly on the symbol and modifier keys. The letter
+// arrangement could be anyone at all. Since I'm used to touch typing on Colemak
+// <http://colemak.com> (by Shai Coleman), that's what I chose.
+
+// This work belongs to the public domain.
+
+// v2010-07-05
+
+// Local installation (no root privileges):
+//
+// Copy this file to a handy location (you need to place it inside a directory
+// called "symbols"):
+//
+// $ mkdir -p "$HOME/.xkb/symbols"
+// $ mv ergonomak "$HOME/.xkb/symbols"
+//
+// Then, load it with:
+// 
+// $ setxkbmap -I"$HOME/.xkb" ergonomak -print | xkbcomp -w 0 -I"$HOME/.xkb" - "$DISPLAY" && xset -r 23 -r 34 -r 48 -r 135
+
+// System wide installation:
+//
+// Copy this file to your X11/xkb/symbols/ dir (mine is
+// /usr/share/X11/xkb/symbols/), and run
+//
+// $ setxkbmap ergonomak && xset -r 23 -r 34 -r 48 -r 135
+
+// For future reference:
+// 23 == <TAB> -> ctrl
+// 34 == <AD11> -> ctrl
+// 48 == <AC11> -> mod3
+// 135 == <MENU> -> alt
+
+default partial alphanumeric_keys
+xkb_symbols "ergonomak" {
+    include "us(basic)"
+    include "ergonomak(modifiers)"
+
+    name[Group1]= "Letters, symbols, i18n";
+    name[Group2]= "Numbers and crap";
+
+    // symbol row, left side
+    key <TLDE> {
+        [ numbersign, at ],
+	[ VoidSymbol ]
+    };
+    key <AE01> {
+        [ braceleft, percent ],
+	[ VoidSymbol ]
+    };
+    key <AE02> {
+        [ bracketleft, less ],
+	[ VoidSymbol ]
+    };
+    key <AE03> {
+        [ backslash, exclam ],
+        [ Home ]
+    };
+    key <AE04> {
+        [ parenleft, bar ],
+        [ End ]
+    };
+    key <AE05> {
+        [ minus, asciicircum ],
+	[ VoidSymbol ]
+    };
+
+    key <AE06> {
+        [ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol, VoidSymbol ]
+    };
+
+    // symbol row, right side
+    key <AE07> {
+        [ plus, asciitilde ],
+	[ VoidSymbol ]
+    };
+    key <AE08> {
+        [ parenright, ampersand ],
+	[ VoidSymbol ]
+    };
+    key <AE09> {
+        [ slash, question ],
+	[ VoidSymbol ]
+    };
+    key <AE10> {
+        [ bracketright, greater ],
+	[ VoidSymbol ]
+    };
+    key <AE11> {
+        [ braceright, dollar ],
+	[ VoidSymbol ]
+    };
+    key <AE12> {
+        [ underscore, grave ], 
+	[ VoidSymbol ]
+    };
+
+    // top row, left side
+    key <AD01> {
+        [ q, Q, acircumflex, Acircumflex ],
+	[ Tab, ISO_Left_Tab ]
+    };
+    key <AD02> {
+        [ w, W, aring, Aring ],
+        [ Escape ]
+    };
+    key <AD03> {
+        [ f, F, atilde, Atilde ],
+        [ Up ]
+    };
+    key <AD04> {
+        [ p, P ],
+        [ Return ]
+    };
+    key <AD05> {
+        [ g, G ],
+	[ VoidSymbol ]
+    };
+
+    // top row, right side
+    key <AD06> {
+        [ j, J ],
+	[ VoidSymbol ]
+    };
+    key <AD07> {
+        [ l, L ],
+	[ VoidSymbol ]
+    };
+    key <AD08> {
+        [ u, U, uacute, Uacute ],
+        [ VoidSymbol ]
+    };
+    key <AD09> {
+        [ y, Y ],
+        [ VoidSymbol ]
+    };
+    key <AD10> {
+        [ quotedbl, apostrophe, otilde, Otilde ],
+        [ VoidSymbol ]
+    };
+    // <AD11> is control, see modifiers
+    // unused
+    key <AD12> {
+    	[ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol ]
+    };
+    // unused
+    key <BKSL> {
+    	[ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol ]
+    };
+
+    // home row, left side
+    key <AC01> {
+        [ a, A, aacute, Aacute ],
+        [ BackSpace ]
+    };
+    key <AC02> {
+        [ r, R, agrave, Agrave ],
+        [ Left ]
+    };
+    key <AC03> {
+        [ s, S ],
+        [ Down ]
+    };
+    key <AC04> {
+        [ t, T ],
+        [ Right ]
+    };
+    key <AC05> {
+        [ d, D, degree, VoidSymbol ],
+	[ Delete ]
+    };
+
+    // home row, right side
+    key <AC06> {
+        [ h, H ],
+        [ 0 ]
+    };
+    key <AC07> {
+        [ n, N ],
+        [ 1 ]
+    };
+    key <AC08> {
+        [ e, E, eacute, Eacute ],
+        [ 2 ]
+    };
+    key <AC09> {
+        [ i, I, iacute, Iacute ],
+        [ 3 ]
+    };
+    key <AC10> {
+        [ o, O, oacute, Oacute ],
+        [ 4 ]
+    };
+
+    // bottom row, left side
+    key <AB01> {
+        [ z, Z, ae, AE ],
+	[ VoidSymbol ]
+    };
+    key <AB02> {
+        [ x, X ],
+	// PgUp
+	[ Prior ]
+    };
+    key <AB03> {
+        [ c, C, ccedilla, Ccedilla ],
+	// PgDown
+        [ Next ]
+    };
+    key <AB04> {
+        [ v, V ],
+        [ Insert ]
+    };
+    key <AB05> {
+        [ b, B ],
+	[ VoidSymbol ]
+    };
+
+    // bottom row, right side
+    key <AB06> {
+        [ k, K ],
+        [ 5 ]
+    };
+    key <AB07> {
+        [ m, M, emdash, endash ],
+        [ 6 ]
+    };
+    key <AB08> {
+        [ comma, semicolon, ecircumflex, Ecircumflex ],
+        [ 7 ]
+    };
+    key <AB09> {
+        [ period, colon, oslash, Ooblique ],
+        [ 8 ]
+    };
+    key <AB10> {
+        [ equal, asterisk, ocircumflex, Ocircumflex ],
+        [ 9 ]
+    };
+
+    // unused
+    key <RTRN> {
+    	[ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol ]
+    };
+    key <BKSP> {
+    	[ VoidSymbol, VoidSymbol ],
+	[ VoidSymbol ]
+    };
+};
+
+partial modifier_keys
+xkb_symbols "modifiers" {
+
+    // using both alt keys as ISO_Level3_Shift (Mod5) (usual behaviour for AltGr)
+    include "level3(alt_switch)"
+
+    // using tab and ad11 as Control
+    key <TAB> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Control_L ],
+        symbols[Group2] = [ Control_L ]
+    };
+    key <AD11> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Control_R ],
+        symbols[Group2] = [ Control_R ]
+    };
+    modifier_map Control { <TAB>, <AD11> };
+
+    // using both control keys and menu as alt
+    key <LCTL> {
+        type[Group1]="TWO_LEVEL",
+        type[Group2]="TWO_LEVEL",
+        symbols[Group1] = [ Alt_L, Meta_L ], 
+        symbols[Group2] = [ Alt_L, Meta_L ]
+    };
+    key <RCTL> {
+        type[Group1]="TWO_LEVEL",
+        type[Group2]="TWO_LEVEL",
+        symbols[Group1] = [ Alt_R, Meta_R ], 
+        symbols[Group2] = [ Alt_R, Meta_R ]
+    };
+    key <MENU> {
+        type[Group1]="TWO_LEVEL",
+        type[Group2]="TWO_LEVEL",
+        symbols[Group1] = [ Alt_R, Meta_R ], 
+        symbols[Group2] = [ Alt_R, Meta_R ]
+    };
+    modifier_map Mod1 { <LCTL>, <RCTL>, <MENU> };
+
+    // using caps, ac11 as Mode_switch
+    key <CAPS> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Mode_switch ],
+        symbols[Group2] = [ Mode_switch ]
+    };
+    key <AC11> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Mode_switch ],
+        symbols[Group2] = [ Mode_switch ]
+    };
+    modifier_map Mod3 { <CAPS>, <AC11> };
+
+    // using lsgt and ab11 as shift
+    // (absent in 101-key keyboards)
+    key <LSGT> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Shift_L ],
+        symbols[Group2] = [ Shift_L ]
+    };
+    key <AB11> {
+        type[Group1]="ONE_LEVEL",
+        type[Group2]="ONE_LEVEL",
+        symbols[Group1] = [ Shift_R ],
+        symbols[Group2] = [ Shift_R ]
+    };
+    modifier_map Shift { <LSGT>, <AB11> };
+};
