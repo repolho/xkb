@@ -231,14 +231,14 @@ xkb_symbols "colegrammer" {
 
     // using caps as backspace, backspace as caps
     key <CAPS> {
-        type[Group1]="ONE_LEVEL",
-        type[Group2]="ONE_LEVEL",
+        type = "ONE_LEVEL",
+	repeat = on,
         symbols[Group1] = [ BackSpace ],
         symbols[Group2] = [ BackSpace ]
     };
     key <BKSP> {
-        type[Group1]="ONE_LEVEL",
-        type[Group2]="ONE_LEVEL",
+        type = "ONE_LEVEL",
+	repeat = off,
         symbols[Group1] = [ Caps_Lock ],
         symbols[Group2] = [ Caps_Lock ]
     };
@@ -252,25 +252,26 @@ xkb_symbols "modifiers" {
 
     // using menu as control
     key <MENU> {
-        type[Group1]="ONE_LEVEL",
-        type[Group2]="ONE_LEVEL",
+        type = "ONE_LEVEL",
+	repeat = off,
         symbols[Group1] = [ Control_R ],
         symbols[Group2] = [ Control_R ]
     //    symbols[Group1] = [ Super_R ],
     //    symbols[Group2] = [ Super_R ]
     };
     modifier_map Control { <MENU> };
+    //modifier_map Mod4 { <MENU> };
 
     // using tlde and ae12 as alt
     key <TLDE> {
-        type[Group1]="TWO_LEVEL",
-        type[Group2]="TWO_LEVEL",
+        type = "TWO_LEVEL",
+	repeat = off,
         symbols[Group1] = [ Alt_L, Meta_L ], 
         symbols[Group2] = [ Alt_L, Meta_L ]
     };
     key <AE12> {
-        type[Group1]="TWO_LEVEL",
-        type[Group2]="TWO_LEVEL",
+        type = "TWO_LEVEL",
+	repeat = off,
         symbols[Group1] = [ Alt_R, Meta_R ], 
         symbols[Group2] = [ Alt_R, Meta_R ]
     };
@@ -278,8 +279,8 @@ xkb_symbols "modifiers" {
 
     // using left alt as Mode_switch
     key <LALT> {
-        type[Group1]="ONE_LEVEL",
-        type[Group2]="ONE_LEVEL",
+        type = "ONE_LEVEL",
+	repeat = off,
         symbols[Group1] = [ Mode_switch ],
         symbols[Group2] = [ Mode_switch ]
     };
