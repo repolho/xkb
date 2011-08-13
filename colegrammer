@@ -116,8 +116,8 @@ xkb_symbols "colegrammer" {
     };
     // tmux prefix-key
     key <AD12> {
-        [ grave, VoidSymbol ],
-	[ grave ]
+        [ F6, F6 ],
+	[ F6 ]
     };
     // unused
     key <BKSL> {
