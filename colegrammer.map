@@ -36,7 +36,7 @@ keycode  23 =  u             U            uacute       Uacute        Control_u
 keycode  24 =  y
 keycode  25 =  quotedbl      apostrophe   otilde       Otilde
 keycode  26 =  dollar        numbersign
-keycode  27 =  grave         grave        VoidSymbol   VoidSymbol
+keycode  27 =  F6            F6           VoidSymbol   VoidSymbol
 
 keycode  30 =  a             A            aacute       Aacute        Control_a
 keycode  31 =  r             R            agrave       Agrave        Control_r
