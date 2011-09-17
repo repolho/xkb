@@ -13,9 +13,9 @@
    height="300"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.0 r9654"
+   inkscape:version="0.48.2 r9819"
    version="1.0"
-   sodipodi:docname="kbd.svg">
+   sodipodi:docname="xkb-codes.svg">
   <defs
      id="defs4">
     <marker
@@ -166,7 +166,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
+     inkscape:zoom="1"
      inkscape:cx="430.18421"
      inkscape:cy="142.06188"
      inkscape:document-units="px"
@@ -175,9 +175,9 @@
      showgrid="true"
      gridtolerance="15px"
      showborder="false"
-     inkscape:window-width="1678"
-     inkscape:window-height="779"
-     inkscape:window-x="1"
+     inkscape:window-width="838"
+     inkscape:window-height="523"
+     inkscape:window-x="841"
      inkscape:window-y="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -203,7 +203,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -951,10 +951,10 @@
        id="text5980-7-9-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan5982-6-24-2"
          x="112.5"
          y="157.5"
-         style="font-size:12px">&lt;AD01&gt;</tspan></text>
+         style="font-size:12px"
+         id="tspan3191">&lt;AC01&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -966,7 +966,7 @@
          id="tspan5982-6-24-8"
          x="142.5"
          y="217.5"
-         style="font-size:12px">&lt;AD01&gt;</tspan></text>
+         style="font-size:12px">&lt;AB01&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -978,7 +978,7 @@
          id="tspan5982-6-9-0-8"
          x="172.5"
          y="157.5"
-         style="font-size:12px">&lt;AD02&gt;</tspan></text>
+         style="font-size:12px">&lt;AC02&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -990,7 +990,7 @@
          id="tspan5982-6-9-0-2"
          x="202.5"
          y="217.5"
-         style="font-size:12px">&lt;AD02&gt;</tspan></text>
+         style="font-size:12px">&lt;AB02&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1002,7 +1002,7 @@
          id="tspan5982-6-2-9-1"
          x="232.5"
          y="157.5"
-         style="font-size:12px">&lt;AD03&gt;</tspan></text>
+         style="font-size:12px">&lt;AC03&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1014,7 +1014,7 @@
          id="tspan5982-6-2-9-9"
          x="262.5"
          y="217.5"
-         style="font-size:12px">&lt;AD03&gt;</tspan></text>
+         style="font-size:12px">&lt;AB03&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1026,7 +1026,7 @@
          id="tspan5982-6-1-9-0"
          x="292.5"
          y="157.5"
-         style="font-size:12px">&lt;AD04&gt;</tspan></text>
+         style="font-size:12px">&lt;AC04&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1038,7 +1038,7 @@
          id="tspan5982-6-1-9-7"
          x="322.5"
          y="217.5"
-         style="font-size:12px">&lt;AD04&gt;</tspan></text>
+         style="font-size:12px">&lt;AB04&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1050,7 +1050,7 @@
          id="tspan5982-6-91-6-3"
          x="352.5"
          y="157.5"
-         style="font-size:12px">&lt;AD05&gt;</tspan></text>
+         style="font-size:12px">&lt;AC05&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1062,7 +1062,7 @@
          id="tspan5982-6-91-6-4"
          x="382.5"
          y="217.5"
-         style="font-size:12px">&lt;AD05&gt;</tspan></text>
+         style="font-size:12px">&lt;AB05&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1074,7 +1074,7 @@
          id="tspan5982-6-99-0-1"
          x="412.5"
          y="157.5"
-         style="font-size:12px">&lt;AD06&gt;</tspan></text>
+         style="font-size:12px">&lt;AC06&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1086,7 +1086,7 @@
          id="tspan5982-6-99-0-17"
          x="442.5"
          y="217.5"
-         style="font-size:12px">&lt;AD06&gt;</tspan></text>
+         style="font-size:12px">&lt;AB06&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1098,7 +1098,7 @@
          id="tspan5982-6-5-6-4"
          x="472.5"
          y="157.5"
-         style="font-size:12px">&lt;AD07&gt;</tspan></text>
+         style="font-size:12px">&lt;AC07&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1110,7 +1110,7 @@
          id="tspan5982-6-5-6-0"
          x="502.5"
          y="217.5"
-         style="font-size:12px">&lt;AD07&gt;</tspan></text>
+         style="font-size:12px">&lt;AB07&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1124,7 +1124,7 @@
          id="tspan5982-6-57-0-6"
          x="532.5"
          y="157.5"
-         style="font-size:12px">&lt;AD08&gt;</tspan></text>
+         style="font-size:12px">&lt;AC08&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1138,7 +1138,7 @@
          id="tspan5982-6-57-0-9"
          x="562.5"
          y="217.5"
-         style="font-size:12px">&lt;AD08&gt;</tspan></text>
+         style="font-size:12px">&lt;AB08&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1150,7 +1150,7 @@
          id="tspan5982-6-8-9-6"
          x="592.5"
          y="157.5"
-         style="font-size:12px">&lt;AD09&gt;</tspan></text>
+         style="font-size:12px">&lt;AC09&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1162,7 +1162,7 @@
          id="tspan5982-6-8-9-0"
          x="622.5"
          y="217.5"
-         style="font-size:12px">&lt;AD09&gt;</tspan></text>
+         style="font-size:12px">&lt;AB09&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1174,7 +1174,7 @@
          id="tspan5982-6-54-6-0"
          x="652.5"
          y="157.5"
-         style="font-size:12px">&lt;AD10&gt;</tspan></text>
+         style="font-size:12px">&lt;AC10&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1186,7 +1186,7 @@
          id="tspan5982-6-54-6-3"
          x="682.5"
          y="217.5"
-         style="font-size:12px">&lt;AD10&gt;</tspan></text>
+         style="font-size:12px">&lt;AB10&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
@@ -1198,6 +1198,6 @@
          id="tspan5982-6-7-2-9"
          x="712.5"
          y="157.5"
-         style="font-size:12px">&lt;AD11&gt;</tspan></text>
+         style="font-size:12px">&lt;AC11&gt;</tspan></text>
   </g>
 </svg>
