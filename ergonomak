@@ -1,9 +1,10 @@
 // Ergonomak - Ergonomic and symmetric layout concept, by Repolho
-//
+// https://github.com/repolho/xkb
+
 // This layout is not meant for everyday use, but rather as an experiment in
 // symbol and modifier key placement, to hopefully come up with useful ideas
 // that can be incorporated into a real layout.
-//
+
 // Objectives:
 // 1. Have all fingers taking care of no more than two key columns.
 // 2. Prevent any wrist movements; all keys must be acessible by finger movement
@@ -13,14 +14,12 @@
 // 4. Have two keys for each modifier.
 // 5. Fit into an 101-key keyboard.
 // 6. Accommodate internationalization (through AltGr).
-//
+
 // The emphasys here is clearly on the symbol and modifier keys. The letter
 // arrangement could be anyone at all. Since I'm used to touch typing on Colemak
 // <http://colemak.com> (by Shai Coleman), that's what I chose.
 
 // This work belongs to the public domain.
-
-// v2010-07-05
 
 // Local installation (no root privileges):
 //

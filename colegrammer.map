@@ -1,5 +1,5 @@
 # colegrammer.map
-# <http://repura.livejournal.com/tag/colegrammer>
+# https://github.com/repolho/xkb
 
 # This is a linux console counterpart to colegrammer. Here, the (left) alt key
 # will serve the same purpose as Mod3 in the xkb version, but it remains alt for

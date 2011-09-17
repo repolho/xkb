@@ -1,5 +1,5 @@
 // Colegrammer - Colemak for the (shell) programmer
-// <http://repura.livejournal.com/tag/colegrammer>
+// https://github.com/repolho/xkb
 
 // For future reference:
 //  66 == <CAPS> -> backspace
@@ -55,7 +55,7 @@ xkb_symbols "colegrammer" {
     };
     key <AE09> {
         [ slash, question, ucircumflex, Ucircumflex ],
-	[ VoidSymbol ]
+	[ slash ]
     };
     key <AE10> {
         [ bracketright, greater, guillemotright, VoidSymbol ],
